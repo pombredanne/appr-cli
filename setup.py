@@ -11,6 +11,7 @@ except ImportError:
 with open('README.md') as readme_file:
     readme = readme_file.read()
 
+<<<<<<< HEAD
 base_requirements = [
     'future',
     'requests',
@@ -29,6 +30,8 @@ test_requirements = [
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
+=======
+>>>>>>> 1a0881c... Lint code
 requirements = [
     'futures',
     'python-etcd',
@@ -73,7 +76,7 @@ setup(
     name='cnr',
     version='0.0.1',
     description="CNR server",
-    long_description=readme + '\n\n' + history,
+    long_description=readme,
     author="Antoine Legrand",
     author_email='2t.antoine@gmail.com',
     url='https://github.com/ant31/cn-app-registry/cnr-server',
