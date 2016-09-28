@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 matrix:
   include:
     - os: linux
@@ -53,3 +54,22 @@ deploy:
   on:
     tags: true
     condition: $MAKECMD = "test"
+=======
+sudo: false
+
+env:
+  - TOXENV=py27
+  - TOXENV=flake8
+
+install:
+  - pip install -U tox
+
+cache:
+  - pip
+
+language: python
+script: tox
+
+after_success:
+  - if [ "$TOXENV" == "py27" ] ; then coveralls ; fi
+>>>>>>> 48b6588... Add travis.
