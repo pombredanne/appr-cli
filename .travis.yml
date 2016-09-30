@@ -63,6 +63,7 @@ env:
 
 install:
   - pip install -U tox
+  - pip install -U coveralls
 
 cache:
   - pip
