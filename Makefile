@@ -93,4 +93,8 @@ coveralls: test
 	coveralls
 
 pylint:
+<<<<<<< HEAD
 	-pylint --rcfile=".pylintrc" cnrclient
+=======
+	pylint --rcfile=~/.pylintrc cnr
+>>>>>>> 5d5d822... Add README
