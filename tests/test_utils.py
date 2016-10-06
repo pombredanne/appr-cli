@@ -1,17 +1,28 @@
+<<<<<<< HEAD
 import os
 
 import pytest
 import cnrclient.utils
+=======
+import os.path
+import pytest
+import cnr.utils
+>>>>>>> d6f1c84... New data models + tests
 
 
 def test_mkdirp_on_existing_dir(tmpdir):
     exists = str(tmpdir.mkdir("dir1"))
+<<<<<<< HEAD
     cnrclient.utils.mkdir_p(exists)
+=======
+    cnr.utils.mkdir_p(exists)
+>>>>>>> d6f1c84... New data models + tests
     assert os.path.exists(exists)
 
 
 def test_mkdirp(tmpdir):
     path = os.path.join(str(tmpdir), "new/directory/tocreate")
+<<<<<<< HEAD
     cnrclient.utils.mkdir_p(path)
     assert os.path.exists(path)
 
@@ -61,3 +72,16 @@ def test_parse_package_name(package, expected):
 def test_parse_bad_package_name(package, expected):
     with pytest.raises(ValueError):
         assert cnrclient.utils.parse_package_name(package) == expected
+=======
+    cnr.utils.mkdir_p(path)
+    assert os.path.exists(path)
+
+
+def test_mkdirp_unauthorized(tmpdir):
+    import os
+    d = str(tmpdir.mkdir("dir2"))
+    path = os.path.join(d, "directory/tocreate")
+    os.chmod(d, 0)
+    with pytest.raises(OSError):
+        cnr.utils.mkdir_p(path)
+>>>>>>> d6f1c84... New data models + tests

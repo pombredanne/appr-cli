@@ -12,6 +12,7 @@ with open('README.md') as readme_file:
     readme = readme_file.read()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 base_requirements = [
     'future',
     'requests',
@@ -32,14 +33,20 @@ with open('HISTORY.rst') as history_file:
 
 =======
 >>>>>>> 1a0881c... Lint code
+=======
+
+>>>>>>> d6f1c84... New data models + tests
 requirements = [
     'futures',
+    'redis',
     'python-etcd',
     'semantic_version',
+    'peewee',
     'flask',
     'Flask>=0.10.1',
     'flask-cors',
 ]
+
 
 test_requirements = [
     "pytest",
@@ -49,6 +56,7 @@ test_requirements = [
     "requests-mock"
 ]
 
+<<<<<<< HEAD
 requirements = base_requirements + cli_requirements
 
 setup(
@@ -72,6 +80,9 @@ setup(
     ],
     package_dir={'cnrclient':
                  'cnrclient'},
+=======
+
+>>>>>>> d6f1c84... New data models + tests
 setup(
     name='cnr-server',
     version='0.0.2',
@@ -82,10 +93,14 @@ setup(
     url='https://github.com/ant31/cn-app-registry/cnr-server',
     packages=[
         'cnr',
+        'cnr.tests',
         'cnr.api',
         'cnr.api.impl',
         'cnr.models',
-        'cnr.models.etcd'
+        'cnr.models.kv',
+        'cnr.models.kv.etcd',
+        'cnr.models.kv.redis',
+        'cnr.models.kv.filesystem',
     ],
     package_dir={'cnr':
                  'cnr'},
@@ -102,5 +117,10 @@ setup(
         'Programming Language :: Python :: 2.7',
     ],
     test_suite='tests',
+    setup_requries=['pytest-runner'],
     tests_require=test_requirements,
+    dependency_links=[
+        'https://github.com/jplana/python-etcd/archive/0d0145f5e835aa032c97a0a5e09c4c68b7a03f66.zip#egg=python-etcd'
+    ]
+
 )
