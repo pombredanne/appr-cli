@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import base64
 import json
 
@@ -153,3 +154,6 @@ def rc_resource(deploy):
 def svc_resource(deploy):
     kubeui = deploy["deploy"][0]
     return kubeui['resources'][2]
+=======
+from cnr.tests.conftest import *
+>>>>>>> d6f1c84... New data models + tests

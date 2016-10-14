@@ -3,6 +3,7 @@ include LICENSE
 include README.md
 recursive-include cnrclient/commands/plugins *
 recursive-include tests *
+recursive-include cnr tests *
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
 
