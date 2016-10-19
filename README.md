@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CNR Command Line Tool
 
 ## Install the Helm Registry Plugin
@@ -87,6 +88,10 @@ helm registry push --namespace $USERNAME app.quay.io
 helm registry install app.quay.io/$USERNAME/nginx
 ```
 =======
+=======
+[![Coverage Status](https://coveralls.io/repos/github/cn-app-registry/cnr-server/badge.svg)](https://coveralls.io/github/cn-app-registry/cnr-server)
+
+>>>>>>> 058761b... Add more api tests
 # cnr-server
 ## Install
 1. git clone https://github.com/cn-app-registry/cnr-server.git && cd cnr-server
