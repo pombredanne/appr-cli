@@ -109,7 +109,7 @@ STORAGE=filesystem ./run-server.sh
 
 ### Etcd
 ```
-STORAGE=redis ./run-server.sh
+STORAGE=etcd ./run-server.sh
 ```
 
 <<<<<<< HEAD
