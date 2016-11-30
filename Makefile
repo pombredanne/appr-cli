@@ -103,7 +103,11 @@ coveralls: test
 
 pylint:
 <<<<<<< HEAD
+<<<<<<< HEAD
 	-pylint --rcfile=".pylintrc" cnrclient
 =======
 	pylint --rcfile=~/.pylintrc cnr
 >>>>>>> 5d5d822... Add README
+=======
+	pylint --rcfile=~/.pylintrc cnr  -E -r y
+>>>>>>> c8fe7cb... add gitlab-ci

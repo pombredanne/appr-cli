@@ -73,9 +73,13 @@ language: python
 script: tox
 
 after_success:
+<<<<<<< HEAD:.travis.yml
   - if [ "$TOXENV" == "py27" ] ; then coveralls ; fi
 <<<<<<< HEAD
 >>>>>>> 48b6588... Add travis.
 =======
+=======
+  b- if [ "$TOXENV" == "py27" ] ; then coveralls ; fi
+>>>>>>> c8fe7cb... add gitlab-ci:.travis.yml.back
   - if [ "$TOXENV" == "py27" ] ; then codecov ; fi
 >>>>>>> ae5dfb3... add codecov

@@ -1,7 +1,11 @@
 include AUTHORS.rst
 include LICENSE
 include README.md
+<<<<<<< HEAD
 recursive-include cnrclient/commands/plugins *
+=======
+include .coveralls.yml
+>>>>>>> c8fe7cb... add gitlab-ci
 recursive-include tests *
 recursive-include cnr tests *
 recursive-exclude * __pycache__
