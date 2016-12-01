@@ -93,7 +93,11 @@ helm registry install app.quay.io/$USERNAME/nginx
 =======
 # cnr-server
 
+<<<<<<< HEAD
 >>>>>>> 4229be1... README: reorganize and fix wording
+=======
+[![build status](https://gitlab.com/cn-app-registry/cnr-server/badges/master/build.svg)](https://gitlab.com/cn-app-registry/cnr-server/commits/master)
+>>>>>>> da8bcab... Update README.md
 [![Coverage Status](https://coveralls.io/repos/github/cn-app-registry/cnr-server/badge.svg)](https://coveralls.io/github/cn-app-registry/cnr-server)
 [![Swagger API Reference](https://img.shields.io/badge/swagger-docs-blue.svg)](Documentation/cnr-api-swagger.yaml)
 
