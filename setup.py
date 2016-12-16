@@ -86,7 +86,7 @@ setup(
 >>>>>>> d6f1c84... New data models + tests
 setup(
     name='cnr-server',
-    version='0.2.2',
+    version='0.2.3',
     description="cloud-native app registry server",
     long_description=readme,
     author="Antoine Legrand",
